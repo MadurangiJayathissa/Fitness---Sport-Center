@@ -78,7 +78,7 @@ export default function About() {
                             fontSize: 15, color: 'var(--text-2)', lineHeight: 1.8,
                             maxWidth: 430, marginBottom: 18,
                         }}>
-                            Founded in 2023, FitZone was born from a simple belief: that world class fitness
+                            Founded in 2023, Fitness Sport Center was born from a simple belief: that world class fitness
                             should be accessible to everyone. We've spent 5 years building a space where
                             beginners and elite athletes share the same floor.
                         </p>
