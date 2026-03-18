@@ -1,0 +1,250 @@
+/* ========================================
+   FITZONE GLOBAL STYLES
+   Design System: Industrial Power Aesthetic
+   Fonts: Barlow Condensed + DM Sans
+   Brand Palette:
+     Gold:       #C9920A
+     Dark Brown: #2A2516
+     Black:      #080808
+     Charcoal:   #2E2E2E
+     Cream:      #F2EFE6
+======================================== */
+
+:root {
+    /* ── Brand Palette ─────────────────── */
+    --gold: #C9920A;
+    --gold-light: #E5A80C;
+    --gold-dim: #A87808;
+    --dark-brown: #2A2516;
+    --black: #080808;
+    --charcoal: #2E2E2E;
+    --cream: #F2EFE6;
+    --cream-dim: #E8E4DA;
+
+    /* ── Light Mode Semantic ───────────── */
+    --bg: var(--cream);
+    --bg-2: var(--cream-dim);
+    --bg-3: #dddad0;
+    --surface: #ffffff;
+    --border: #d0ccc0;
+    --text: var(--black);
+    --text-2: var(--dark-brown);
+    --text-3: #7a7060;
+    --accent: var(--gold);
+    --accent-inv: var(--black);
+    --hero-bg: var(--black);
+    --hero-text: var(--cream);
+    --card-bg: #ffffff;
+    --card-border: #d0ccc0;
+    --nav-bg: rgba(8, 8, 8, 0.97);
+    --nav-text: var(--cream);
+
+    /* ── Typography ────────────────────── */
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    /* ── Spacing ───────────────────────── */
+    --section-gap: clamp(80px, 10vw, 140px);
+    --container: 1200px;
+
+    /* ── Transitions ───────────────────── */
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    --dur: 0.4s;
+}
+
+/* ── Dark Mode ─────────────────────────────── */
+[data-theme="dark"] {
+    --bg: var(--black);
+    --bg-2: var(--dark-brown);
+    --bg-3: var(--charcoal);
+    --surface: var(--dark-brown);
+    --border: #3a3020;
+    --text: var(--cream);
+    --text-2: #c8c0a8;
+    --text-3: #7a7060;
+    --accent: var(--gold);
+    --accent-inv: var(--black);
+    --card-bg: var(--dark-brown);
+    --card-border: #3a3020;
+}
+
+/* ── Reset ─────────────────────────────────── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: var(--font-body);
+    border: none;
+    background: none;
+}
+
+input,
+textarea,
+select {
+    font-family: var(--font-body);
+}
+
+/* ── Layout ────────────────────────────────── */
+.container {
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 60px);
+}
+
+/* ── Utilities ─────────────────────────────── */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ── Scrollbar ─────────────────────────────── */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold-dim);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold);
+}
+
+/* ── Selection ─────────────────────────────── */
+::selection {
+    background: var(--gold);
+    color: var(--black);
+}
+
+/* ── Animations ────────────────────────────── */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse-ring {
+    0% {
+        box-shadow: 0 0 0 0 rgba(201, 146, 10, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(201, 146, 10, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(201, 146, 10, 0);
+    }
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ── Animation Helpers ─────────────────────── */
+.animate-fadeUp {
+    animation: fadeUp 0.7s var(--ease) both;
+}
+
+.animate-delay-1 {
+    animation-delay: 0.1s;
+}
+
+.animate-delay-2 {
+    animation-delay: 0.2s;
+}
+
+.animate-delay-3 {
+    animation-delay: 0.3s;
+}
+
+.animate-delay-4 {
+    animation-delay: 0.4s;
+}
