@@ -27,8 +27,6 @@ validated contact form with animated success feedback.
 | localStorage | Theme persistence |
 | Netlify | Deployment |
 
-> Zero external UI libraries — every component is hand-built.
-
 ---
 
 ## 🎨 Brand Palette
@@ -51,7 +49,7 @@ validated contact form with animated success feedback.
 - **Trainers** — 6 expandable trainer cards with bio panels
 - **Plans** — 3 pricing tiers with **monthly / annual billing toggle** 
 - **Contact** — validated form + animated success feedback
-- **🌙 Dark Mode** — persisted to `localStorage` 
+- **Dark Mode** — persisted to `localStorage` 
 - **Fully responsive** — mobile hamburger menu, fluid grids
 - **CSS animations** — fadeUp, ticker, pulse-ring, hover micro-interactions
 
