@@ -23,9 +23,9 @@ validated contact form with animated success feedback.
 | React 18 | UI framework |
 | CSS Custom Properties | Design system + dark mode |
 | Google Fonts | Barlow Condensed + DM Sans |
-| React Hooks (useState, useEffect) | State & side-effects |
+| React Hooks  | State & side-effects |
 | localStorage | Theme persistence |
-| Vercel / Netlify | Deployment |
+| Netlify | Deployment |
 
 > Zero external UI libraries — every component is hand-built.
 
