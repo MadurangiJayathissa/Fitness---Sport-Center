@@ -12,7 +12,7 @@ validated contact form with animated success feedback.
 |---|---|
 | **Live Demo** | https://fitnesssport-center.netlify.app/ |
 | **Figma Design** | https://www.figma.com/design/X1wC2bYSXQ6FgqdbXpKByW/Fitness?node-id=0-1&t=ZRpo8YtCJr7EosHE-1 |
-| **GitHub Repo** | https://github.com/yourusername/fitzone-gym |
+| **GitHub Repo** | https://github.com/MadurangiJayathissa/Fitness---Sport-Center |
 
 ---
 
