@@ -1,4 +1,4 @@
-# 🏋️ FitZone Gym — Promotional Website
+# 🏋️ Fitness Gym — Promotional Website
 
 A premium, fully responsive fitness gym website built with **React 18**.
 Showcases services, membership plans, elite trainers, and includes a
@@ -10,8 +10,8 @@ validated contact form with animated success feedback.
 
 | Resource | URL |
 |---|---|
-| **Live Demo** | https://fitzone-gym.vercel.app ← _update after deploy_ |
-| **Figma Design** | https://figma.com ← _add your link_ |
+| **Live Demo** | https://fitnesssport-center.netlify.app/ |
+| **Figma Design** | https://www.figma.com/design/X1wC2bYSXQ6FgqdbXpKByW/Fitness?node-id=0-1&t=ZRpo8YtCJr7EosHE-1 |
 | **GitHub Repo** | https://github.com/yourusername/fitzone-gym |
 
 ---
@@ -47,11 +47,11 @@ validated contact form with animated success feedback.
 
 - **Hero** — full-screen with parallax dumbbell, animated ticker, stat grid
 - **About** — brand story, animated progress bars, achievement card
-- **Services** — 8 cards with **text search + 9-category filter** *(bonus)*
+- **Services** — 8 cards with **text search + 9-category filter** 
 - **Trainers** — 6 expandable trainer cards with bio panels
-- **Plans** — 3 pricing tiers with **monthly / annual billing toggle** *(bonus)*
+- **Plans** — 3 pricing tiers with **monthly / annual billing toggle** 
 - **Contact** — validated form + animated success feedback
-- **🌙 Dark Mode** — persisted to `localStorage` *(bonus)*
+- **🌙 Dark Mode** — persisted to `localStorage` 
 - **Fully responsive** — mobile hamburger menu, fluid grids
 - **CSS animations** — fadeUp, ticker, pulse-ring, hover micro-interactions
 
@@ -94,68 +94,23 @@ fitzone-gym/
 │   └── index.html
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx      ← sticky nav, mobile menu, dark-mode toggle
-│   │   ├── Hero.jsx        ← full-screen hero + ticker
-│   │   ├── About.jsx       ← brand story + progress bars
-│   │   ├── Services.jsx    ← services grid + search + category filter
-│   │   ├── Trainers.jsx    ← expandable trainer cards
-│   │   ├── Plans.jsx       ← pricing + monthly/annual toggle
-│   │   ├── Contact.jsx     ← contact form with validation + success
-│   │   └── Footer.jsx      ← footer with newsletter
+│   │   ├── Navbar.jsx      
+│   │   ├── Hero.jsx        
+│   │   ├── About.jsx       
+│   │   ├── Services.jsx    
+│   │   ├── Trainers.jsx    
+│   │   ├── Plans.jsx       
+│   │   ├── Contact.jsx     
+│   │   └── Footer.jsx      
 │   ├── styles/
-│   │   └── global.css      ← design tokens, dark mode, animations
-│   ├── App.jsx             ← root component + dark mode logic
-│   └── index.js            ← React DOM entry
+│   │   └── global.css      
+│   ├── App.jsx             
+│   └── index.js            
 ├── .gitignore
 ├── package.json
 └── README.md
 ```
 
----
 
-## 🌐 Deploy
 
-### Vercel (recommended — zero config)
-```bash
-npm i -g vercel
-vercel
-```
 
-### Netlify
-1. `npm run build`
-2. Drag `build/` to [netlify.com/drop](https://app.netlify.com/drop)
-
-### GitHub Pages
-```bash
-npm install gh-pages --save-dev
-# Add to package.json:
-#   "homepage": "https://yourusername.github.io/fitzone-gym"
-#   "predeploy": "npm run build"
-#   "deploy": "gh-pages -d build"
-npm run deploy
-```
-
----
-
-## 📝 Suggested Commit History
-
-```
-init: project setup and folder structure
-feat: global CSS design system and brand palette
-feat: Navbar with mobile menu and dark mode toggle
-feat: Hero section with ticker and parallax effect
-feat: About section with progress bars
-feat: Services section with search and category filter
-feat: Trainers section with expandable bio cards
-feat: Membership Plans with pricing toggle
-feat: Contact form with validation and success feedback
-feat: Footer with newsletter signup
-fix: responsive layout adjustments
-chore: README and final cleanup
-```
-
----
-
-## 📄 License
-
-MIT — free to use and modify.
